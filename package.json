@@ -1,0 +1,11 @@
+{
+  "name": "vlu-qe-walking-skeleton",
+  "version": "1.0.0",
+  "description": "Walking Skeleton Lab 01 - Software Testing",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
