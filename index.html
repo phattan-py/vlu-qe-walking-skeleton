@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Walking Skeleton</title>
+</head>
+<body>
+  <h2>Đăng nhập</h2>
+  <form id="loginForm">
+    <label>Username: <input type="text" id="username"></label><br><br>
+    <label>Password: <input type="password" id="password"></label><br><br>
+    <button type="button" onclick="handleLogin()">Đăng nhập</button>
+    <p id="result"></p>
+  </form>
+  <script src="login.js"></script>
+  <script>
+    function handleLogin() {
+      const u = document.getElementById('username').value;
+      const p = document.getElementById('password').value;
+      const ok = checkLogin(u, p);
+      document.getElementById('result').innerText = ok ? "Đăng nhập thành công!" : "Sai tài khoản hoặc mật khẩu!";
+    }
+  </script>
+</body>
+</html>
